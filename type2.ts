@@ -28,7 +28,7 @@ let person: {
 
 console.log(greeting("Igor"));
 
-const greeting1= function (name: string) {
+const greeting1= function (name: string):string {
     return `Hi ${name}`;
 };
 
