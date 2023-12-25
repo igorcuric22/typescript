@@ -10,3 +10,5 @@ skill[1] = "Programming";
 skill.push('Software Design');
 
 console.log(skill);
+
+console.log(skill.length);
