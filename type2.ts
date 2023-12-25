@@ -20,4 +20,11 @@ let person: {
 
  console.log(person);
 
- 
+ let greeting : (name: string) => string;
+
+ greeting = function (name: string) {
+    return `Hi ${name}`;
+};
+
+console.log(greeting("Igor"));
+
