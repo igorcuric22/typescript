@@ -12,7 +12,7 @@ for (let i = 0; ; i++) {
     if (i > 9) break;
 }
 
-let i = 0;
+i = 0;
 for (; ;) {
     console.log(i);
     i++;
