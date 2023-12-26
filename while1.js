@@ -4,6 +4,8 @@ while (counter < 5) {
     counter++;
 }
 var list = document.querySelector('#list');
-while (list.firstChild) {
-    list.removeChild(list.firstChild);
-}
+setTimeout(function () {
+    while (list.firstChild) {
+        list.removeChild(list.firstChild);
+    }
+}, 2000);

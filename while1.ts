@@ -7,6 +7,8 @@ while (counter < 5) {
 
 let list = document.querySelector('#list');
 
-while (list.firstChild) {
-    list.removeChild(list.firstChild);
-}
+setTimeout(()=>{
+    while (list.firstChild) {
+        list.removeChild(list.firstChild);
+    }
+},2000)
