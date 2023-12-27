@@ -34,3 +34,5 @@ function getDay(year: number = new Date().getFullYear(), month: number): number 
 let day = getDay(2019, 2);
 console.log(day); // 28
 
+day = getDay(undefined, 2);
+console.log(day);
