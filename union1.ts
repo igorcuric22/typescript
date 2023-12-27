@@ -26,8 +26,9 @@ function add1(a: number | string, b: number | string) {
     throw new Error('Parameters must be numbers or strings');
 }
 
+// catch throw e:any
 try{
-    console.log(add1(5,2));
+    console.log(add1(2,5));
     console.log(add1("5","2"));
     console.log(add1(true,false));
     } catch(e:any) {
