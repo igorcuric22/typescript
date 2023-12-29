@@ -1,22 +1,21 @@
 interface Person {
+    readonly ssn: string;
     firstName: string;
-    middleName?: string;
-    lastName: string;
+    lastName: string;    
+}
+
+
+let person = {
+    ssn: '171-28-0926',
+    firstName: 'John',
+    lastName: 'Doe'
 }
 
 function getFullName(person: Person) {
-    if (person.middleName) {
-        return `${person.firstName} ${person.middleName} ${person.lastName}`;
-    }
     return `${person.firstName} ${person.lastName}`;
 }
 
-let jane = {
-    firstName: 'Jane',
-    middleName: 'K.',
-    lastName: 'Doe',
-    age: 22
- };
 
-let fullName = getFullName(jane);
+
+let fullName = getFullName(person);
 console.log(fullName); // Jane Doe
