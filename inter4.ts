@@ -1,20 +1,13 @@
-interface Person {
-    firstName: string;
-    middleName?: string;
-    lastName: string;
-}
-
-function getFullName(person: Person) {
-    if (person.middleName) {
-        return `${person.firstName} ${person.middleName} ${person.lastName}`;
-    }
-    return `${person.firstName} ${person.lastName}`;
+interface StringFormat {
+    (str: string, isUpper: boolean): string
 }
 
 
 
+let format: StringFormat;
 
+format = function (str: string, isUpper: boolean) {
+    return isUpper ? str.toLocaleUpperCase() : str.toLocaleLowerCase();
+};
 
-let fullName = getFullName(jane);
-console.log(fullName); // Jane Doe
-
+console.log(format('hi', true));
